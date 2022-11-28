@@ -79,16 +79,23 @@
   }
 }
 
-.modal__map {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  min-height: 199px;
+.modal__map-container {
+  width: 224px;
+  height: 199px;
   margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
   @media screen and (min-width: 768px) {
-    min-height: 260px;
+    width: 448px;
+    height: 260px;
     margin-top: 32px;
   }
+}
+
+.modal__map {
+  width: 100%;
+  height: 100%;
 }
 
 .modal__form {
