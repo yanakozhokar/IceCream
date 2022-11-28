@@ -1,0 +1,128 @@
+<header class="header">
+  <div class="container header__container" id="top">
+    <a class="logo link" href="../src/index.html"
+      ><svg class="logo__icon" width="40" height="37">
+        <use href="../src/images/icons.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <nav class="navigation">
+      <ul class="navigation__list list">
+        <li class="navigation__item">
+          <a href="../src/index.html" class="navigation__link link">Home</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#about" class="navigation__link link">How it’s made?</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#products" class="navigation__link link">Our products</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#contacts" class="navigation__link link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="menu-open" data-menu-open>
+      <svg width="32" height="32">
+        <use href="../src/images/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <button type="button" class="btn header__btn" data-buy-open1>
+      Buy now<svg class="header__icon" width="12" height="12">
+        <use href="../src/images/icons.svg#icon-button-arrow"></use>
+      </svg>
+    </button>
+    <div class="mob-menu is-hidden" data-menu>
+      <div class="mob-menu__top">
+        <a class="mob-menu__logo link" href="../src/index.html">
+          <svg class="logo__icon" width="40" height="37">
+            <use href="../src/images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <button type="button" class="menu-close" data-menu-close>
+          <svg width="32" height="32">
+            <use href="../src/images/icons.svg#icon-close-menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu__content">
+          <ul class="mob-menu__list list">
+            <li class="mob-menu__item">
+              <a href="../src/index.html" class="mob-menu__link link">Home</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="#about" class="mob-menu__link link">How it’s made?</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="#products" class="mob-menu__link link"
+                >Our products</a
+              >
+            </li>
+            <li class="mob-menu__item">
+              <a href="#contacts" class="mob-menu__link link">Contact</a>
+            </li>
+          </ul>
+          <button type="button" class="btn mob-menu__btn" data-buy-open2>
+            Buy now
+            <svg class="mob-menu__icon" width="12" height="12">
+              <use href="../src/images/icons.svg#icon-button-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal__backdrop is-hidden" data-buy>
+    <div class="modal product-card">
+        <button class="modal__btn-close" type="button" data-buy-close>
+          <svg class="close-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <p class="product-card__title">Buy now</p>
+        <ul class="product-card__list">
+          <li class="product-card__item product-card__item1">
+            <p class="product-card__text">ice cream</p>
+          </li>
+          <li class="product-card__item product-card__item2">
+            <p class="product-card__text">ice coffee</p>
+          </li>
+          <li class="product-card__item product-card__item3">
+            <p class="product-card__text">milkshakes</p>
+          </li>
+        </ul>
+        <form class="form">
+          <ul class="list">
+            <li class="form-field">
+              <textarea
+                class="form-input"
+                name="name"
+                id="username"
+                rows="1"
+                placeholder="Name"
+              ></textarea>
+            <li class="form-field">
+              <textarea
+                class="form-input"
+                name="tel"
+                id="usertel"
+                rows="1"
+                placeholder="Phone"
+              ></textarea>
+            </li>
+            <li class="form-field">
+              <textarea
+                class="form-input"
+                name="comment"
+                id="usercomment"
+                rows="4"
+                placeholder="Comment"
+              ></textarea>
+            </li>
+          </ul>
+          <button type="submit" class="btn product-card__btn">
+            Submit
+          </button>
+        </form>
+      </div>
+  </div>
+</header>

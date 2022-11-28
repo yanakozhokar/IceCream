@@ -1,0 +1,254 @@
+.hero {
+  margin: 0 auto;
+  height: 403px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  max-width: 320px;
+  background-position: bottom;
+  background-image: url(../images/hero/dots-decor-mob.png);
+  @include retina {
+    background-image: url(../images/hero/dots-decor-mob-2x.png);
+  }
+  @include tablet {
+    height: 335px;
+    max-width: 768px;
+
+    background-position: bottom;
+    background-image: url(../images/hero/dots-decor-tab.png);
+    @include retina {
+      background-image: url(../images/hero/dots-decor-tab-2x.png);
+    }
+  }
+  @include desktop {
+    height: 560px;
+    max-width: 1200px;
+    background-position: bottom;
+    background-image: url(../images/hero/dots-decor-desk.png);
+    @include retina {
+      background-image: url(../images/hero/dots-decor-desk-2x.png);
+    }
+  }
+}
+
+.hero .container {
+  position: relative;
+}
+
+.hero__title {
+  margin-bottom: 32px;
+
+  max-width: 247px;
+
+  font-family: $secondaryFontFam;
+  font-size: 26px;
+  line-height: 1.27;
+  text-transform: uppercase;
+  @include tablet {
+    margin-bottom: 24px;
+  }
+  @include desktop {
+    margin-top: 14px;
+    margin-bottom: 28px;
+
+    max-width: 367px;
+    font-size: 38px;
+    line-height: 1.26;
+  }
+}
+
+.hero__anchors {
+  display: flex;
+  gap: 12px;
+}
+
+.hero__anchors--link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 108px;
+  height: 38px;
+  border: 2px solid $accentColor;
+  border-radius: 8px;
+
+  background-color: transparent;
+  color: $blackColor;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+
+  transition: border-color $durationTiming, color $durationTiming;
+  &:hover {
+    border-color: $hoverGreenColor;
+  }
+
+  @include desktop {
+    width: 143px;
+    height: 42px;
+
+    &:focus {
+      outline: transparent;
+      border-color: $hoverGreenColor;
+      color: $primaryTextColor;
+    }
+  }
+}
+
+.no-border {
+  width: 108px;
+  height: 38px;
+  border: none;
+  text-decoration: underline;
+  color: $accentColor;
+  &:hover {
+    color: $hoverGreenColor;
+  }
+
+  @include desktop {
+    width: 143px;
+    height: 42px;
+
+    &:focus {
+      outline: transparent;
+      color: $primaryTextColor;
+    }
+  }
+}
+
+.hero__description {
+  display: none;
+  @include tablet {
+    display: block;
+    margin-top: 39px;
+    margin-left: 184px;
+    max-width: 151px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: $primaryTextColor;
+    &::after {
+      display: block;
+      content: '';
+      margin-top: 20px;
+      @include desktop {
+        margin-top: 24px;
+      }
+
+      height: 16px;
+
+      background-position: left;
+      background-repeat: no-repeat;
+      background-image: url(../images/hero/arrow.svg);
+    }
+  }
+
+  @include desktop {
+    margin-top: 109px;
+    margin-left: 241px;
+    max-width: 200px;
+    font-size: 14px;
+  }
+}
+
+.numbers {
+  display: none;
+  @include tablet {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 32px;
+
+    text-align: right;
+  }
+
+  @include desktop {
+    gap: 18px;
+    margin-bottom: 22px;
+    padding-right: 16px;
+  }
+}
+
+.numbers__item--number {
+  color: $secondaryTextColor;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.21;
+  @include desktop {
+    font-size: 46px;
+    line-height: 1.22;
+  }
+}
+
+.numbers__item--text {
+  font-size: 8px;
+  line-height: 1.25;
+  @include desktop {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 1.21px;
+  }
+}
+
+.hero__picture-ice-creams-plate {
+  display: none;
+  @include tablet {
+    display: block;
+    position: absolute;
+   
+    width: 152px;
+  }
+  @include desktop {
+    width: 225px;
+    bottom: -250px;
+  }
+ animation: plate 8s linear 0ms infinite normal none;
+  @keyframes plate {
+	0% {
+		transform: translateY(-100%) rotate(0deg);
+  }
+  100% {
+	transform: translateY(-100%) rotate(360deg);
+  }
+}
+}
+
+.hero__picture--blur {
+  position: absolute;
+  filter: blur(25px);
+  transform: translate(55px,5px);
+
+  width: 205px;
+  height: 236px;
+  @include tablet {
+    filter: blur(35px);
+    width: 300px;
+    height: 342px;
+    transform: translate(374px, -349px);
+  }
+  @include desktop {
+    filter: blur(50px);
+    width: 477px;
+    height: 590px;
+    transform: translate(640px, -490px);
+  }
+}
+
+.hero__picture--ice-craem-smiles {
+  position: absolute;
+
+  transform: translate(65px, 15px);
+  width: 176px;
+  @include tablet {
+    width: 268px;
+    transform: translate(365px, -318px);
+  }
+  @include desktop {
+    transform: translate(633px, -460px);
+    width: 456px;
+  }
+}

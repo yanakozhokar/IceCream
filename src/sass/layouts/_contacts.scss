@@ -1,0 +1,186 @@
+.contacts.section{
+  @include tablet {
+      padding-bottom: 40px;
+    }
+    @include desktop {
+      padding-bottom: 120px;
+    }
+}
+.contacts {
+  background-color: $primaryBgColor;
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    text-align: start;
+    color: $secondaryTextColor;
+    height: 980px;
+    @media screen and (min-width: 768px) {
+      padding: 40px 24px 0px 24px;
+      font-size: 14px;
+      height: 265px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 40px 40px 0px 40px;
+      font-size: 16px;
+      height: 456px;
+    }
+  }
+}
+
+.contacts__list {
+  position: absolute;
+  top: -415px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    top: -360px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+    top: -190px;
+  }
+}
+
+.contacts__item {
+  width: 280px;
+  padding: 40px 32px 24px 32px;
+  background-color: $bgWhite;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  @media screen and (min-width: 768px) {
+    width: 224px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+  }
+}
+
+.contacts__type {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-left: 23px;
+  padding-right: 23px;
+  border-radius: 4px;
+  background-color: $accentColor;
+  @media screen and (min-width: 780px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+  }
+}
+
+.contacts__location {
+  margin-top: 20px;
+  @media screen and (min-width: 780px) {
+    margin-top: 32px;
+  }
+}
+
+.contacts__adress {
+  margin-top: 8px;
+  color: $contactsAdress;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    cursor: url('../images/pointer.svg'), pointer;
+  }
+  @media screen and (min-width: 780px) {
+    margin-top: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 8px;
+  }
+}
+
+.contacts__working-time {
+  margin-top: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid $contactsLine;
+  border-bottom: 1px solid $contactsLine;
+  @media screen and (min-width: 780px) {
+    margin-top: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.contacts__working-hours {
+  color: $contactsHours;
+}
+
+.contacts__communucation {
+  margin-top: 24px;
+  @media screen and (min-width: 780px) {
+    margin-top: 32px;
+  }
+}
+
+.contacts__phone,
+.contacts__email {
+  color: inherit;
+}
+
+.contacts__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    margin-top: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+}
+
+.contacts__main-button {
+  min-width: 196px;
+  border: none;
+  transition: background-color $durationTiming, color $durationTiming;
+    &:hover {
+      background-color: $hoverGreenColor;
+    }
+  
+    &:focus {
+      background-color: $hoverGreenColor;
+      color: #FFFFFF;
+      fill: #FFFFFF;
+    }
+    &:disabled{
+      background-color: $greyColor;
+    }
+}
+
+.contacts__secondary-button {
+  min-width: 196px;
+  background-color: transparent;
+    transition: border-color $durationTiming, color $durationTiming;
+      &:hover {
+        border-color: $hoverGreenColor;
+      }
+    
+      &:focus {
+        border-color: $hoverGreenColor;
+        color: #FFFFFF;
+        fill:#FFFFFF;
+      }
+    
+      &:disabled {
+        border-color: $greyColor;
+      }
+}
+.button-icon {
+  margin-left: 4px;
+}

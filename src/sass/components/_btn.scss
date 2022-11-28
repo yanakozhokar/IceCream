@@ -1,0 +1,17 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 114px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: $buttonText;
+  background-color: $accentColor;
+  border: 2px solid $accentColor;
+  outline: transparent;
+  border-radius: 10px;
+}

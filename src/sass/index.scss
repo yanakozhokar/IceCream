@@ -1,0 +1,25 @@
+@import './base/reset';
+
+@import './utils/common';
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/visually-hidden';
+@import './utils/is-hidden';
+
+@import './components/scroll';
+@import './components/body';
+@import './components/section';
+@import './components/container';
+@import './components/title';
+@import './components/btn';
+@import './components/modal';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/products';
+@import './layouts/about';
+@import './layouts/advantages';
+@import './layouts/gallery';
+@import './layouts/customer-rewiew';
+@import './layouts/contacts';
+@import './layouts/footer';

@@ -1,0 +1,123 @@
+.advantages {
+    background-color: $primaryBgColor;
+    padding-bottom: 64px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 204px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+    }
+}
+
+.specialty {
+    display: none;
+}
+
+.advantages-list {
+    display: block;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px;
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.advantages-list__item {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 160px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 64px) / 3);
+    }
+}
+
+.advantages-list__item:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+.about-advantages {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: $accentColor;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 16px;
+    display: flex;
+
+    svg {
+        overflow: hidden;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
+}
+
+.advantages-list__title {
+    display: block;
+    margin-bottom: 16px;
+
+    font-family: $primaryFontFam;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(44 / 36);
+    text-align: center;
+    text-transform: uppercase;
+    color: $bgWhite;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 12px;
+        font-size: 48px;
+        line-height: calc(59 / 48);
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: calc(71 / 58);
+    }
+}
+
+.advantages-list__text {
+    margin-bottom: 0;
+    font-family: $primaryFontFam;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: calc(20 / 12);
+    text-align: center;
+    color: $bgWhite;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(24 / 14);
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(28 / 16);
+        letter-spacing: 0.02em;
+    }
+}

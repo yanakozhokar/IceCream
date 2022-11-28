@@ -1,0 +1,160 @@
+<section class="section__product product" id="products">
+  <div class="product__container">
+    <p class="product__subtitle" >100% natural</p>
+    <h2 class="product__title">products</h2>
+
+    <ul class="product__card-list card-list">
+      <li class="card-list__item card-list__item1">
+        <h3 class="card-list__subtitle">ice cream</h3>
+        <p class="card-list__text">
+          Soft ice cream with a delicate taste. Made with milk, cream, sugar and
+          natural stabilizer
+        </p>
+        <button class="card-list__button" type="button"  data-products-open1>
+          <svg width="40" height="16">
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </li>
+
+      <li class="card-list__item card-list__item2">
+        <h3 class="card-list__subtitle">ice coffee</h3>
+        <p class="card-list__text">
+          Fragrant invigorating drink created from 100% natural ingredients
+          without the use of preservatives and flavor enhancers
+        </p>
+        <button class="card-list__button" type="button"  data-products-open2>
+          <svg width="40" height="16">
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </li>
+
+      <li class="card-list__item card-list__item3">
+        <h3 class="card-list__subtitle">milkshakes</h3>
+        <p class="card-list__text">
+          Sweet drinks based on milk and ice cream, supplemented with syrups,
+          fruits, berries and other sweets of your choice
+        </p>
+        <button class="card-list__button" type="button" data-products-open3>
+          <svg width="40" height="16">
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="modal__backdrop is-hidden" data-products>
+    <div class="modal product-about">
+      <button class="modal__btn-close" type="button" data-products-close>
+        <svg class="close-btn-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+      <p class="product-about__title">Chololate icecream</p>
+      <picture class="product-about__picture">
+        <source
+          class="product-about__img"
+          srcset="
+            ./images/product/chololate1x-tab-min.jpg 1x,
+            ./images/product/chololate1x-tab-min.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          class="product-about__img"
+          srcset="
+            ./images/product/chololate1x-mob-min.jpg 1x,
+            ./images/product/chololate1x-mob-min.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="product-about__img"
+          src="./images/product/chololate1x-tab-min.jpg"
+          alt="IceCream"
+          width="131"
+          height="131"
+        />
+      </picture>
+      <ul class="composition">
+        <li class="composition__item">
+          <p class="composition__text composition__text-circle">320</p>
+          <p class="composition__text">kcal</p>
+        </li>
+        <li class="composition__item">
+          <p class="composition__text composition__text-circle">4g</p>
+          <p class="composition__text">Prote..</p>
+        </li>
+        <li class="composition__item">
+          <p class="composition__text composition__text-circle">8,2g</p>
+          <p class="composition__text">Fats</p>
+        </li>
+        <li class="composition__item">
+          <p class="composition__text composition__text-circle">40,4g</p>
+          <p class="composition__text">Carbs</p>
+        </li>
+      </ul>
+      <p class="product-about__text">Ingredients</p>
+<ul class="product-about__list list">
+  <li class="product-about__item">
+    <p class="product-about__table">Milk</p>
+    <p class="product-about__table">100ml</p>
+  </li>
+  <li class="product-about__item">
+    <p class="product-about__table">Belgian chocolate</p>
+    <p class="product-about__table">20g</p>
+  </li>
+  <li class="product-about__item">
+    <p class="product-about__table">Cream</p>
+    <p class="product-about__table">150 ml</p>
+  </li>
+  <li class="product-about__item">
+    <p class="product-about__table">Cocoa powder</p>
+    <p class="product-about__table">30g</p>
+  </li>
+  <li class="product-about__item">
+    <p class="product-about__table">Sugar</p>
+    <p class="product-about__table">40g</p>
+  </li>
+  <li class="product-about__item">
+    <p class="product-about__table">Vanilla sugar</p>
+    <p class="product-about__table">10g</p>
+  </li>
+</ul> 
+      <form class="form form__product-about">
+        <ul class="list">
+          <li class="form-field">
+            <textarea
+              class="form-input"
+              name="name"
+              id="name"
+              rows="1"
+              placeholder="Name"
+            ></textarea>
+          </li>
+
+          <li class="form-field">
+            <textarea
+              class="form-input"
+              name="tel"
+              id="tel"
+              rows="1"
+              placeholder="Phone"
+            ></textarea>
+          </li>
+          <li class="form-field">
+            <textarea
+              class="form-input"
+              name="comment"
+              id="comment"
+              rows="4"
+              placeholder="Comment"
+            ></textarea>
+          </li>
+        </ul>
+        <button type="submit" class="btn product-card__btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>

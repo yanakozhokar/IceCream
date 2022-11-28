@@ -1,0 +1,99 @@
+<section class="about section" id="about">
+  <div class="container">
+    <p class="about-pre-heading" >Tradition and love</p>
+    <h2 class="about-heading">How it’s made?</h2>
+    <div class="about-general">
+      <picture class="about__picture">
+        <source
+          srcset="
+            ./images/about/cow-desk.png    1x,
+            ./images/about/cow-desk-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/about/cow-tab.png    1x,
+            ./images/about/cow-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/about/cow-mob.png    1x,
+            ./images/about/cow-mob-2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          src="./images/about/cow-desk.png"
+          alt="cow"
+          width="500"
+          height="527"
+        />
+      </picture>
+
+      <div class="about-text-button">
+        <div class="about-text">
+          <p class="about-text__item">
+            Ice is a place where you will become not only a little happier, but
+            also healthier. Health is the main value for us, and we follow it
+            when creating our handmade desserts.
+          </p>
+          <p class="about-text__item">
+            We use traditional recipes and 100% natural ingredients. Our
+            products are so natural that they can be given to children from the
+            age of three years. Sweets lovers can expect 55 types of ice cream,
+            15 types of coffee and 23 milkshakes.
+          </p>
+          <p class="about-text__item last">
+            This is enough to choose ice cream and coffee for any mood!
+          </p>
+        </div>
+
+        <div class="about-button-list">
+          <button type="button" class="about-btn btn" data-readmore-open>
+            Read more
+            <svg class="about-btn__icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-button-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="backdrop is-hidden" data-readmore>
+          <div class="modal__readmore">
+            <!-- <div class="modal__box"> -->
+              <button
+                class="modal__btn-close"
+                type="button"
+                data-readmore-close
+              >
+                <svg class="modal__close" width="24" height="24">
+                  <use href="./images/icons.svg#icon-close-btn"></use>
+                </svg>
+              </button>
+              <p class="modal__style">How it’s made?</p>
+
+              <video class="modal__video"
+                src="./images/ice-cream.mp4"
+                poster="./images/ice-cream.jpg"
+                width="448"
+                controls
+                autoplay
+                loop
+                preload="auto"
+              ></video>
+
+
+              <p class="modal__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+              </p>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

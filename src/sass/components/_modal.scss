@@ -1,0 +1,159 @@
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms linear, visibility 300ms linear;
+
+  z-index: 2;
+}
+.modal__backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  border-radius: 10px;
+  background-color: $bgModal;
+  @media screen and (min-width: 768px) {
+    width: 568px;
+  }
+}
+
+.modal__container {
+  padding: 28px;
+  @media screen and (min-width: 768px) {
+    padding: 32px 40px;
+  }
+}
+
+.modal__btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-top: 12px;
+  margin-right: 12px;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.close-btn-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.modal__title {
+  font-family: 'Seymour One', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  max-width: 322px;
+  margin-left: auto;
+  margin-right: auto;
+  color: $secondaryTextColor;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.modal__text {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.42;
+  color: $secondaryTextColor;
+  @media screen and (min-width: 768px) {
+    margin-top: 24px;
+    font-size: 16px;
+  }
+}
+
+.modal__map {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 199px;
+  margin-top: 20px;
+  @media screen and (min-width: 768px) {
+    min-height: 260px;
+    margin-top: 32px;
+  }
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+  }
+}
+
+.modal__input {
+  width: 100%;
+  max-width: 224px;
+  padding: 8px 12px;
+  background-color: $inputModal;
+  border: 1px solid $inputBorder;
+  border-radius: 10px;
+  @media screen and (min-width: 768px) {
+    max-width: 368px;
+    padding: 11px 16px;
+  }
+  &:not(:first-child) {
+    margin-top: 12px;
+    @media screen and (min-width: 768px) {
+      margin-top: 16px;
+    }
+  }
+  .comment {
+    min-height: 64px;
+    @media screen and (min-width: 768px) {
+      min-height: 84px;
+    }
+  }
+}
+
+.modal__input::placeholder {
+  font-size: 12px;
+  line-height: 1.41;
+  color: $secondaryTextColor;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.modal__button {
+  margin-top: 24px;
+  @media screen and (min-width: 768px) {
+    min-height: 32px;
+  }
+  &:hover {
+    border-color: $hoverGreenColor;
+    background-color: $hoverGreenColor;
+  }
+
+  &:focus {
+    border-color: $hoverGreenColor;
+    background-color: $hoverGreenColor;
+    color: #FFFFFF;
+    fill:#FFFFFF;
+  }
+
+  &:disabled {
+    border-color: $greyColor;
+    color: $greyColor;
+  }
+}
